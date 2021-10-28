@@ -1,0 +1,5 @@
+out/*
+sofia*
+venv
+input.txt
+coverage
