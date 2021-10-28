@@ -9,7 +9,7 @@ palabra, pronunciacion (hablada), spelling (hablado)
 
 1. Crear input.txt con lista de palabras a estudiar
 2. `source venv/bin/activate`
-3. python gen.py
+3. `python gen.py`
 4. copiar todos los archivos de out en carpeta Windows `cp -a out /mnt/c/Users/hgonz/Downloads`
 5. copiar mp3 en collection.media de Anki: `%APPDATA%\Anki2\User 1\collection.media`
 6. importar words.csv en Anki como un nuevo deck de tipo `Spelling`
@@ -17,7 +17,8 @@ palabra, pronunciacion (hablada), spelling (hablado)
 
 ## Autenticacion
 
-Para usar la API de Google:
+Para usar la API de Google se necesita un proyecto GCP con la API activada y una service account. Instrucciones aca: https://cloud.google.com/text-to-speech/docs/libraries#client-libraries-install-python
+
 ```
-export GOOGLE_APPLICATION_CREDENTIALS=sofia-spelling-bee-db6056ea3933.json
+export GOOGLE_APPLICATION_CREDENTIALS=<keyfile>.json
 ```
